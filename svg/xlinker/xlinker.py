@@ -36,7 +36,7 @@ assert os.path.splitext(filename)[1] == '.svg', 'La imagen debe ser svg'
 with open(filename) as svg:
     svg_data = svg.read()
 
-soup = BeautifulSoup(svg_data, 'lxml')
+soup = BeautifulSoup(svg_data, features = 'xml')
 svg_tag = soup.select('svg')[0]
 svg_tag['xmlns:xlink'] = 'http://www.w3.org/1999/xlink'
 
@@ -44,7 +44,6 @@ newtag = soup.new_tag('script')
 newtag['xlink:href'] = sys.argv[2]
 svg_tag.append(newtag)
 
-
 svg_data = soup.prettify()
 with open(filename, "w") as file:
-    file.write(svg_data)
+    file.write(str(soup))
