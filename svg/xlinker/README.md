@@ -1,5 +1,5 @@
 # XLinker
-** Agrega scripts que se carguen remotamente desde una URL a una imagen SVG.
+### Agrega scripts que se carguen remotamente desde una URL a una imagen SVG.
 
 Una imagen SVG es una imagen vectorial con un formato XML,
 a estas imágenes se les pueden agregar animaciones via JavaScript,
@@ -24,3 +24,4 @@ pip3 install -r < requirements.txt
 
 python3 xlinker.py /ruta/del/documento/svg http://dominio_donde_este_alojado_el/script.js
 
+![Modo de uso](https://raw.githubusercontent.com/HoneySEC/scripts/master/svg/xlinker/demo/photo/usage.png)
