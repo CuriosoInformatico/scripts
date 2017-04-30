@@ -25,3 +25,6 @@ pip3 install -r < requirements.txt
 python3 xlinker.py /ruta/del/documento/svg http://dominio_donde_este_alojado_el/script.js
 
 ![Modo de uso](https://raw.githubusercontent.com/HoneySEC/scripts/master/svg/xlinker/demo/photo/usage.png)
+
+### Ejemplo de funcionamiento
+![Ejemplo de funcionamiento(https://raw.githubusercontent.com/HoneySEC/scripts/master/svg/xlinker/demo/photo/demo.png)
